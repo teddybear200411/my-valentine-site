@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>will you be my valentine, my beautiful girl?</h1>
+        <div class="buttons">
+            <button id="yes">yes, absolutely</button>
+            <button id="no">no thanks</button>
+        </div>
+        <div id="sudoku-section" style="display: none;">
+            <h2>Sudoku Game</h2>
+            <div id="sudoku-board" class="board"></div>
+            <button id="check-answers">Check Answers</button>
+            <button id="get-hint">Get Hint</button> <!-- New Hint Button -->
+        </div>        
+    </div>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="Over the Moon [ ezmp3.cc ].mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>    
+    <button id="play-music"><3</button>
+
+    <!-- Difficulty Selector -->
+    <div id="difficulty-selector" style="display: none;">
+        <label for="difficulty">Choose Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+
+    <!-- Load JavaScript -->
+    <script src="sudoku.js"></script>
+    <script src="script.js"></script>  
+</body>
+</html>
+
+
+
+
+
+
+
